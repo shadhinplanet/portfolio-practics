@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-item {
+    visibility: hidden;
+    @apply px-3 py-2 hover:text-blue-700 duration-200 text-sm hover:text-sm opacity-0
+}
+.menu-item.opened{
+    @apply visible opacity-100
+}
+#header-area{
+    @apply duration-200
+}
+.sticky{
+    @apply fixed top-0 left-0 w-full bg-white shadow-md
+}
+.logo img{
+    @apply duration-200
+}
+.sticky .logo img{
+    width: 40px;
+}
+div#menu_icon i {
+    font-size: 35px;
+    top: -10px;
+}
+.stroke-text{
+    -webkit-text-stroke: #000 1px;
+}
+
+.radius-animation{
+    animation: radius 8s ease-in-out infinite 1s;
+    background-blend-mode: multiply;
+    -webkit-box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 0px 0px 18px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes radius {
+   0% {
+       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   }
+
+   50% {
+       border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+   }
+
+   100% {
+       border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   }
+}
+
+.skills li{
+    @apply mx-2 w-20 h-20 rounded-full bg-purple-100 hover:bg-purple-200 duration-200 flex items-center justify-center text-2xl;
+}

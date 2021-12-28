@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Task App</title>
+
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+ 
+
+
+  <section class="py-10 relative h-screen">
+    
+    <canvas id="my-canvas" class="absolute top-0 left-0 w-full h-full -z-10"></canvas>
+
+    <header id="header-area" class="px-20 py-5">
+      <div class="flex justify-between items-center">
+        <div class="logo">
+          <a href="index.html"><img src="./img/logo.png" alt="Logo" width="70" /></a>
+        </div>
+        <div class="flex-1 flex justify-end items-center">
+          <ul class="flex justify-end enable" id="mainmenu">
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">About</a></li>
+            <li class="menu-item"><a href="#">Services</a></li>
+            <li class="menu-item"><a href="#">Testimonials</a></li>
+            <li class="menu-item"><a href="#">Projects</a></li>
+            <li class="menu-item"><a href="#">BLogs</a></li>
+            <li class="menu-item"><a href="#">Contact</a></li>
+          </ul>
+          <div class="cursor-pointer relative -top-[7px]" id="menu_icon">
+            <i class="fa fa-bars absolute top-0"></i>
+            <i class="fa fa-close hidden absolute top-0"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mx-auto">
+      <div class="flex justify-between items-center relative">
+        <div class="">
+          <h2 class="font-bold text-xl">Creative Freelancer</h2>
+          <h1
+            class="font-bold tracking-widest text-5xl py-3 stroke-text text-transparent bg-transparent stroke-black stroke-1 fill-transparent">
+            Hello World</h1>
+          <h3 class="font-light">
+            <div id="typed-strings">
+              <span>Developer</span>
+              <span>Designer</span>
+              <span>Editor</span>
+            </div>
+            <span id="typed"></span>
+          </h3>
+
+
+         <div class="absolute -bottom-[80px] left-0 w-full text-center">
+          <ul class="flex justify-center  items-center skills">
+            <li><a href="#"><i class="fa fa-wordpress"></i></a></li>
+            <li><a href="#"><i class="fa fa-css3"></i></a></li>
+            <li><a href="#"><i class="fa fa-html5"></i></a></li>
+          </ul>
+         </div>
+
+
+        </div>
+        <div class="relative flex w-[450px] h-[450px]">
+          <div class="py-10 w-full shadow-lg shodow-inner bg-no-repeat bg-cover radius-animation"
+            style="background-image: url(https://picsum.photos/300/300);"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 
+    <section class="">
+      <div class="container mx-auto">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias quo
+          provident facilis ad molestiae eligendi, corrupti, atque id illo optio
+          eaque dolorem, voluptas culpa officiis unde. Alias reiciendis
+          repudiandae mollitia!
+        </p>
+      </div>
+    </section> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/confetti.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
